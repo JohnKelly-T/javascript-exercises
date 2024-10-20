@@ -1,7 +1,6 @@
 const removeFromArray = function(array, ...itemsToRemove) {
-
     for (item of itemsToRemove) {
-        array.splice(array.indexOf(item), 1);
+        array = array.filter(value => value != item);
     }
 
     return array;
